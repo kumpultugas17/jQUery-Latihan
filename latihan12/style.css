@@ -1,0 +1,29 @@
+body{
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    margin-top: 60pt;
+    margin-left: 45pt;
+}
+
+.lingkaran{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    background: black;
+    padding: 30px;
+    color: #fff;
+    margin-top:  20px;
+}
+
+.tombol{
+    color: #fff;
+    background: #232323;
+    border: none;
+    padding: 10px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tutorial belajar JQuery Part 12 : Menambahkan CSS dengan JQuery</title>  
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>CSS Function JQuery | www.malasngoding.com</h1> 
+
+    <button class="tombol" id="default">Default</button>
+    <button class="tombol" id="merah">Merah</button>
+    <button class="tombol" id="biru">Biru</button>
+    <button class="tombol" id="hijau">Hijau</button>
+    <button class="tombol" id="kuning">Kuning</button>
+    <div class="lingkaran">
+        <h2 class="warna">hitam</h2>
+    </div>
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#merah').click(function(){
+            $('.lingkaran').css("background-image","url(img/1.jpg)"); 
+            $('.warna').text("Merah")          
+        });
+
+        $('#biru').click(function(){
+            $('.lingkaran').css("background","blue");
+            $('.warna').text("Biru")            
+        });   
+
+        $('#hijau').click(function(){
+            $('.lingkaran').css("background","green");
+            $('.warna').text("Hijau") 
+        });   
+
+        $('#kuning').click(function(){
+            $('.lingkaran').css("background","yellow");
+            $('.warna').text("Kuning")            
+        });
+
+        $('#default').click(function(){
+            $('.lingkaran').css("background","black");
+            $('.warna').text("Hitam")            
+        });   
+    });
+</script>
+</html>

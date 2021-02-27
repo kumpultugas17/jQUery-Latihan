@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script type="text/javascript" src="jquery.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <form class="form">
+          <div class="form-row">
+            <div class="col-md-12">
+              <label for="">Nama Lengkap</label>
+              <input type="text" class="form-control" id="nama">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-12">
+              <label for="">Asal</label>
+              <input type="text" class="form-control" id="kota">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-12">
+              <label for="">Asal</label>
+              <input type="text" class="form-control" id="hasil">
+            </div>
+          </div>
+          <button class="btn btn-primary mt-3" type="submit">Submit form</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.form').submit(function() {
+      var nama = $('#nama').val().length; 
+      var kota = $('#kota').val().length;         
+
+      if (nama == 0 || kota == 0) {                
+        $(".form-control").addClass('is-invalid');
+        return false;
+      }
+    });
+
+    $('#nama', '#kota').keyup(function() {
+      var namat = $('#nama').val(); 
+      var kotat = $('#kotat').val(); 
+      var hasil = 0;
+
+      var hasil = namat + kotat;
+
+      // if (namat > 3 || kotat > 3) {                
+      //   $(".form-control").addClass('is-valid');
+      // } else {
+      //   $(".form-control").removeClass('is-valid');
+      // }
+    });
+  });
+</script>
+
+</html>

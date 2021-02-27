@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tutorial belajar JQuery Part 8 : Menetapkan nilai dan value dengan JQuery</title>    
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Set Function JQuery | www.malasngoding.com</h1>     
+    <button id="tombol">KLIK</button>
+    <input type="text" name="nama" class="nama">
+    <p class="nama"></p>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#tombol').click(function(){
+            // $('.nama').text("M. IQBAL ADENAN");
+            $('.nama').val("M. IQBAL ADENAN");
+        });     
+    });
+</script>
+</html>
